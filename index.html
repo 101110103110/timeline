@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="" />
-
-
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
 
     <title>Timeline</title>
 
-    <!-- Meta tags for SEO and social sharing -->
     <link rel="canonical" href="" />
     <meta
       name="description"
-      content="A simple website."
+      content=""
     />
     <meta name="robots" content="index,follow" />
     <meta property="og:title" content="Hello World!" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
     <meta
       property="og:description"
-      content="A simple website."
+      content=""
     />
     <meta
       property="og:image"
@@ -31,111 +26,244 @@
     />
     <meta name="twitter:card" content="summary" />
 
-    <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
     ul.timeline {
-    list-style-type: none;
-    position: relative;
-    padding-left: 1.5rem;
-}
+      list-style-type: none;
+      position: relative;
+      padding-left: 1.5rem;
+    }
 
+    ul.timeline:before {
+      content: " ";
 
-ul.timeline:before {
-    content: ' ';
+      background: #e0e0e0;
+      display: inline-block;
+      position: absolute;
+      left: 16px;
+      width: 4px;
+      height: 100%;
+      z-index: 400;
+      border-radius: 1rem;
+    }
 
-    background: #e0e0e0;
-    display: inline-block;
-    position: absolute;
-    left: 16px;
-    width: 4px;
-    height: 100%;
-    z-index: 400;
-    border-radius: 1rem;
-}
+    li.timeline-item {
+      margin: 20px 0;
+    }
 
-li.timeline-item {
-    margin: 20px 0;
-}
+    .timeline-arrow {
+      border-top: 0.5rem solid transparent;
 
-.timeline-arrow {
-    border-top: 0.5rem solid transparent;
-    border-right: 0.5rem solid #ffffff;
-    border-right: 0.5rem solid #e0e0e0; /* new */
-    border-bottom: 0.5rem solid transparent;
-    display: block;
-    position: absolute;
-    left: 2rem;
-}
+      border-right: 0.5rem solid #e0e0e0;
+      border-bottom: 0.5rem solid transparent;
+      display: block;
+      position: absolute;
+      left: 2rem;
+    }
 
-li.timeline-item::before {
-    content: ' ';
+    li.timeline-item::before {
+      content: " ";
 
-    background: #F46A3C;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid #ffffff;
-    left: 11px;
-    width: 14px;
-    height: 14px;
-    z-index: 400;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
+      background: #f46a3c;
+      display: inline-block;
+      position: absolute;
+      border-radius: 50%;
+      border: 3px solid #ffffff;
+      left: 11px;
+      width: 14px;
+      height: 14px;
+      z-index: 400;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
 
-.text-gray {
-    color: #999999;
-}
+    body {
+      background: #ffffff;
+    }
+
+    .text-gray {
+      color: #999999;
+    }
     </style>
   </head>
   <body>
     <div class="container py-5">
-        <div class="row">
-            <div class="col-lg-7 mx-auto">
-                <ul class="timeline">
-                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                        <div class="timeline-arrow"></div>
-                        <h2 class="h5 mb-0">February 24, 2022 (17:00 Brussels Time)</h2><span class="text-gray">50th BARIAlink Academy</span>
-                        <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                      <p class="text-small mt-2 font-weight-light"><span style="font-weight: bold; color: #FF6632;">REGISTER NOW<i class="fa fa-chevron-right ml-2"></i><i class="fa fa-chevron-right"></i></span></p>
-                        <p class="text-small mt-2 font-weight-light">Add to</p>
-                      <p class="text-small mt-2 font-weight-light"><i class="fa fa-google mr-2"></i><a style="color: #000;" target="_blank" rel="noopener" href="#">Google Calendar</a></p>
-                        <p class="text-small mt-2 font-weight-light"><i class="fa fa-calendar-o mr-2"></i>Outlook Calendar (.ics)</p>
-                        <p class="text-small mt-2 font-weight-light"><i class="fa fa-yahoo mr-2"></i>Yahoo Calendar</p>
-                      
-                       
-                      
-                    </li>
-                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                        <div class="timeline-arrow"></div>
-                        <h2 class="h5 mb-0">Title of section 2</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>5 April, 2019</span>
-                        <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                    </li>
-                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                        <div class="timeline-arrow"></div>
-                        <h2 class="h5 mb-0">Title of section 3</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>18 August, 2019</span>
-                        <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                    </li>
-                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                        <div class="timeline-arrow"></div>
-                        <h2 class="h5 mb-0">Title of section 4</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>10 October, 2019</span>
-                        <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                    </li>
-                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                        <div class="timeline-arrow"></div>
-                        <h2 class="h5 mb-0">Title of section 5</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>11 October, 2019</span>
-                        <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                    </li>
-                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                        <div class="timeline-arrow"></div>
-                        <h2 class="h5 mb-0">Title of section 6</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>12 October, 2019</span>
-                        <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                    </li>
-                </ul>
-            </div>
+      <div class="row">
+        <div class="col-lg-7 mx-auto">
+          <ul class="timeline">
+            <li class="timeline-item bg-white ml-3 p-4 shadow">
+              <div class="timeline-arrow"></div>
+              <h2 class="h5 mb-0">February 24, 2022 (17:00 Brussels Time)</h2>
+              <span class="h6 text-gray">50th BARIAlink Academy</span>
+              <p class="text-small mt-2 font-weight-light">
+                Organized by:
+                <a style="color: #000" target="_blank" rel="noopener" href="#"
+                  >AZ Sint-Jan Brugge</a
+                >
+              </p>
+              <p class="text-small mt-2 font-weight-light">
+                <span style="font-weight: bold; color: #ff6632"
+                  ><a
+                    style="color: #ff6632; text-decoration: none"
+                    target="_blank"
+                    rel="noopener"
+                    href="#"
+                    >REGISTER NOW<i class="fa fa-chevron-right ml-2"></i
+                    ><i class="fa fa-chevron-right"></i></a
+                ></span>
+              </p>
+              <p class="text-small mt-2 font-weight-light">Add to</p>
+              <p class="text-small mt-2 font-weight-light">
+                <i class="fa fa-google mr-2"></i
+                ><a style="color: #000" target="_blank" rel="noopener" href="#"
+                  >Google Calendar</a
+                >
+              </p>
+              <p class="text-small mt-2 font-weight-light">
+                <i class="fa fa-calendar-o mr-2"></i
+                ><a style="color: #000" target="_blank" rel="noopener" href="#"
+                  >Outlook Calendar (.ics)</a
+                >
+              </p>
+              <p class="text-small mt-2 font-weight-light">
+                <i class="fa fa-yahoo mr-2"></i
+                ><a style="color: #000" target="_blank" rel="noopener" href="#"
+                  >Yahoo Calendar</a
+                >
+              </p>
+            </li>
+            <li class="timeline-item bg-white ml-3 p-4 shadow">
+              <div class="timeline-arrow"></div>
+              <h2 class="h5 mb-0">March 24, 2022 (17:00 Brussels Time)</h2>
+              <span class="h6 text-gray">51st BARIAlink Academy</span>
+              <p class="text-small mt-2 font-weight-light">
+                Organized by:
+                <a style="color: #000" target="_blank" rel="noopener" href="#"
+                  >AZ Sint-Jan Brugge</a
+                >
+              </p>
+              <p class="text-small mt-2 font-weight-light">
+                <span style="font-weight: bold; color: #ff6632"
+                  ><a
+                    style="color: #ff6632; text-decoration: none"
+                    target="_blank"
+                    rel="noopener"
+                    href="#"
+                    >REGISTER NOW<i class="fa fa-chevron-right ml-2"></i
+                    ><i class="fa fa-chevron-right"></i></a
+                ></span>
+              </p>
+              <p class="text-small mt-2 font-weight-light">Add to</p>
+              <p class="text-small mt-2 font-weight-light">
+                <i class="fa fa-google mr-2"></i
+                ><a style="color: #000" target="_blank" rel="noopener" href="#"
+                  >Google Calendar</a
+                >
+              </p>
+              <p class="text-small mt-2 font-weight-light">
+                <i class="fa fa-calendar-o mr-2"></i
+                ><a style="color: #000" target="_blank" rel="noopener" href="#"
+                  >Outlook Calendar (.ics)</a
+                >
+              </p>
+              <p class="text-small mt-2 font-weight-light">
+                <i class="fa fa-yahoo mr-2"></i
+                ><a style="color: #000" target="_blank" rel="noopener" href="#"
+                  >Yahoo Calendar</a
+                >
+              </p>
+            </li>
+            <li class="timeline-item bg-white ml-3 p-4 shadow">
+              <div class="timeline-arrow"></div>
+              <h2 class="h5 mb-0">April 21, 2022 (18:00 Brussels Time)</h2>
+              <span class="h6 text-gray">52nd BARIAlink Academy</span>
+              <p class="text-small mt-2 font-weight-light">
+                Organized by:
+                <a style="color: #000" target="_blank" rel="noopener" href="#"
+                  >AZ Sint-Jan Brugge</a
+                >
+              </p>
+              <p class="text-small mt-2 font-weight-light">
+                <span style="font-weight: bold; color: #ff6632"
+                  ><a
+                    style="color: #ff6632; text-decoration: none"
+                    target="_blank"
+                    rel="noopener"
+                    href="#"
+                    >REGISTER NOW<i class="fa fa-chevron-right ml-2"></i
+                    ><i class="fa fa-chevron-right"></i></a
+                ></span>
+              </p>
+              <p class="text-small mt-2 font-weight-light">Add to</p>
+              <p class="text-small mt-2 font-weight-light">
+                <i class="fa fa-google mr-2"></i
+                ><a style="color: #000" target="_blank" rel="noopener" href="#"
+                  >Google Calendar</a
+                >
+              </p>
+              <p class="text-small mt-2 font-weight-light">
+                <i class="fa fa-calendar-o mr-2"></i
+                ><a style="color: #000" target="_blank" rel="noopener" href="#"
+                  >Outlook Calendar (.ics)</a
+                >
+              </p>
+              <p class="text-small mt-2 font-weight-light">
+                <i class="fa fa-yahoo mr-2"></i
+                ><a style="color: #000" target="_blank" rel="noopener" href="#"
+                  >Yahoo Calendar</a
+                >
+              </p>
+            </li>
+            <li class="timeline-item bg-white ml-3 p-4 shadow">
+              <div class="timeline-arrow"></div>
+              <h2 class="h5 mb-0">May 19, 2022 (18:00 Brussels Time)</h2>
+              <span class="h6 text-gray">53rd BARIAlink Academy</span>
+              <p class="text-small mt-2 font-weight-light">
+                Organized by:
+                <a style="color: #000" target="_blank" rel="noopener" href="#"
+                  >AZ Sint-Jan Brugge</a
+                >
+              </p>
+              <p class="text-small mt-2 font-weight-light">
+                <span style="font-weight: bold; color: #ff6632"
+                  ><a
+                    style="color: #ff6632; text-decoration: none"
+                    target="_blank"
+                    rel="noopener"
+                    href="#"
+                    >REGISTER NOW<i class="fa fa-chevron-right ml-2"></i
+                    ><i class="fa fa-chevron-right"></i></a
+                ></span>
+              </p>
+              <p class="text-small mt-2 font-weight-light">Add to</p>
+              <p class="text-small mt-2 font-weight-light">
+                <i class="fa fa-google mr-2"></i
+                ><a style="color: #000" target="_blank" rel="noopener" href="#"
+                  >Google Calendar</a
+                >
+              </p>
+              <p class="text-small mt-2 font-weight-light">
+                <i class="fa fa-calendar-o mr-2"></i
+                ><a style="color: #000" target="_blank" rel="noopener" href="#"
+                  >Outlook Calendar (.ics)</a
+                >
+              </p>
+              <p class="text-small mt-2 font-weight-light">
+                <i class="fa fa-yahoo mr-2"></i
+                ><a style="color: #000" target="_blank" rel="noopener" href="#"
+                  >Yahoo Calendar</a
+                >
+              </p>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
   </body>
 </html>
